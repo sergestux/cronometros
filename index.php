@@ -6,19 +6,14 @@
 <body>
 
 <form>
-
-<label for='Nombre-1'>Reloj 1:</label>
-<input type='text' id='txtReloj-1' name='Nombre-1' class='btnReloj' Clave='1'>
-<input id='reloj-1' style='width: 180px; background-color: black;font-size:50px;color: green; text-align: center' value='0:00'>
-<br>
-<label for='Nombre-1'>Reloj 2:</label>
-<input type='text' id='txtReloj-1' name='Nombre-2' class='btnReloj' Clave='2'>
-<input id='reloj-2' style='width: 180px; background-color: black;font-size:50px;color: green; text-align: center' value='0:00'>
-<br>
-<label for='Nombre-3'>Reloj 3:</label>
-<input type='text' id='txtReloj-3' name='Nombre-3' class='btnReloj' Clave='3'>
-<input id='reloj-3' style='width: 180px; background-color: black;font-size:50px;color: green; text-align: center' value='0:00'>
-
+<?php
+  for($Cont=1; $Cont<=5;$Cont++)
+    echo "
+        <label for='Nombre-$Cont'>Reloj $Cont:</label>
+        <input type='text' id='txtReloj-$Cont' name='Nombre-$Cont' class='btnReloj' Clave='$Cont'>
+        <input id='reloj-$Cont' style='width: 180px; background-color: black;font-size:50px;color: green; text-align: center' value='0:00'>
+        <br>";
+  ?>
 </form>
 
 </body>
