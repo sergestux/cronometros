@@ -6,17 +6,47 @@
 <body>
 
 <form>
-<?php
-$TAM=10;
 
-for($Cont=1; $Cont<=$TAM;$Cont++)
-  echo "
-      <label for='Nombre-$Cont'>Reloj $Cont:</label>
-      <input type='text' id='txtReloj-$Cont' name='Nombre-$Cont' class='btnReloj' Clave='$Cont'>
-      <input id='reloj-$Cont' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
-      <br>";
-?>
-</form>
+      <label for='Nombre-1'>Reloj 1:</label>
+      <input type='text' id='txtReloj-1' name='Nombre-1' class='btnReloj' Clave='1'>
+      <input id='reloj-1' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-2'>Reloj 2:</label>
+      <input type='text' id='txtReloj-2' name='Nombre-2' class='btnReloj' Clave='2'>
+      <input id='reloj-2' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-3'>Reloj 3:</label>
+      <input type='text' id='txtReloj-3' name='Nombre-3' class='btnReloj' Clave='3'>
+      <input id='reloj-3' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-4'>Reloj 4:</label>
+      <input type='text' id='txtReloj-4' name='Nombre-4' class='btnReloj' Clave='4'>
+      <input id='reloj-4' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-5'>Reloj 5:</label>
+      <input type='text' id='txtReloj-5' name='Nombre-5' class='btnReloj' Clave='5'>
+      <input id='reloj-5' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-6'>Reloj 6:</label>
+      <input type='text' id='txtReloj-6' name='Nombre-6' class='btnReloj' Clave='6'>
+      <input id='reloj-6' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-7'>Reloj 7:</label>
+      <input type='text' id='txtReloj-7' name='Nombre-7' class='btnReloj' Clave='7'>
+      <input id='reloj-7' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-8'>Reloj 8:</label>
+      <input type='text' id='txtReloj-8' name='Nombre-8' class='btnReloj' Clave='8'>
+      <input id='reloj-8' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-9'>Reloj 9:</label>
+      <input type='text' id='txtReloj-9' name='Nombre-9' class='btnReloj' Clave='9'>
+      <input id='reloj-9' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br>
+      <label for='Nombre-10'>Reloj 10:</label>
+      <input type='text' id='txtReloj-10' name='Nombre-10' class='btnReloj' Clave='10'>
+      <input id='reloj-10' style='width: 100px; background-color: black;font-size:40px;color: green; text-align: center' value='00:00'>
+      <br></form>
 
 </body>
 
@@ -27,7 +57,7 @@ for($Cont=1; $Cont<=$TAM;$Cont++)
   const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
 
   //var TAM=>   //TRAIGO LA VARIABLE DE PHP
-  const TAM=<?=$TAM;?>;
+  const TAM=10;
   
   var Cronometros= new Array();
   Cronometros['FechaIni'] = new Array(TAM);   //Fecha inicial
